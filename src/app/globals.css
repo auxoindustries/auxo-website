@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+
+body {
+  font-family: var(--font-baloo2), sans-serif;
+}
+html, body{
+
+  overflow-x: hidden;
+}
+
+
+
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff;
+  /* background of the scrollbar track */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: orange;
+  /* the color of the scrollbar thumb */
+  border-radius: 10px;
+  border: 3px solid #fff;
+  /* creates a padding effect */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: orange white;
+  /* thumb and track */
+}
+
+
+/* for marquee effect  */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+
+
